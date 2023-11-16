@@ -15,6 +15,17 @@
     
   }
 
+  .header__logo{
+    width: 120px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .header__logo{
+      width: 90px;
+    }
+    
+  }
+
   .scrolled {
     background-color: rgba(16, 16, 16, 0.6);
     backdrop-filter: blur(10px);

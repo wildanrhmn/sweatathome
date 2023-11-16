@@ -2,8 +2,7 @@
     height: 75vh;
     background-image: url('../assets/images/background/bg_about.png');
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 
 .about__content{
@@ -98,6 +97,12 @@ ul li p{
     .check-icon{
         font-size: 35px;
     }
+
+    .about__card{
+        width: 500px;
+        height: 250px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -128,11 +133,12 @@ ul li p{
         padding-top: 40px;
     }
     .about__card{
-        width: 250px;
-        height: 280px;
+        width: 400px;
+        height: 230px;
         padding: 15px;
         line-height: 22px;
         font-size: 13px;
+        text-align: center;
     }
 
     .about__card .button__about{

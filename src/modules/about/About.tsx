@@ -5,6 +5,12 @@ import "../../styles/about.css";
 import CheckIcon from "@mui/icons-material/Check";
 
 const AboutPage: React.FC = () => {
+
+  const openWhatsAppChat = () => {
+    // Replace 'your-number' with your actual WhatsApp number
+    window.open('https://wa.me/6285716770575?text=Halo%20Sweat%20at%20Home', '_blank');
+  };
+
   return (
     <section
       className="about"
@@ -17,7 +23,7 @@ const AboutPage: React.FC = () => {
               <h1>Apa Untungnya?</h1>
             </div>
             <ul className="mt-3 mt-xl-5">
-              <li className="d-flex align-items-center gap-3">
+              <li className="d-flex align-items-center flex-column text-center flex-lg-row text-lg-start gap-3 pt-2">
                 <CheckIcon
                   className="check-icon"
                 />
@@ -29,7 +35,7 @@ const AboutPage: React.FC = () => {
                   fisiologi, nutrisi, dan metode latihan yang efektif.
                 </p>
               </li>
-              <li className="d-flex align-items-center gap-3 pt-2">
+              <li className="d-flex align-items-center flex-column text-center flex-lg-row text-lg-start gap-3 pt-2">
                 <CheckIcon
                 className="check-icon"
                 />
@@ -40,7 +46,7 @@ const AboutPage: React.FC = () => {
                   berdasarkan tujuan dan kondisi fisik anda.
                 </p>
               </li>
-              <li className="d-flex align-items-center gap-3 pt-2">
+              <li className="d-flex align-items-center flex-column text-center flex-lg-row text-lg-start gap-3 pt-2">
                 <CheckIcon
                  className="check-icon"
                 />
@@ -55,7 +61,7 @@ const AboutPage: React.FC = () => {
                   perlu diperhatikan.
                 </p>
               </li>
-              <li className="d-flex align-items-center gap-3 pt-2">
+              <li className="d-flex align-items-center flex-column text-center flex-lg-row text-lg-start gap-3 pt-2">
                 <CheckIcon
                   className="check-icon"
                 />
@@ -64,7 +70,7 @@ const AboutPage: React.FC = () => {
                   Menyusun sesi latihan yang efisien dan efektif.
                 </p>
               </li>
-              <li className="d-flex align-items-center gap-3 pt-2">
+              <li className="d-flex align-items-center flex-column text-center flex-lg-row text-lg-start gap-3 pt-2">
                 <CheckIcon
                   className="check-icon"
                 />
@@ -74,7 +80,7 @@ const AboutPage: React.FC = () => {
               </li>
             </ul>
           </div>
-          <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end">
+          <div className="col-lg-4 d-flex justify-content-center justify-content-lg-end pt-3">
             <div className="about__card">
               <p className="pt-3">
                 Para coach{" "}
@@ -90,7 +96,7 @@ const AboutPage: React.FC = () => {
                 memilih{" "}
                 <span style={{ fontWeight: "600" }}>Personal Trainer.</span>
               </p>
-              <div className="d-flex justify-content-center"><button className="button__about">Chat Sekarang!</button></div>
+              <div className="d-flex justify-content-center"><button  onClick={openWhatsAppChat} className="button__about">Chat Sekarang!</button></div>
             </div>
           </div>
         </div>
