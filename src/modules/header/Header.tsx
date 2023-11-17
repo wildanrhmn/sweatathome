@@ -35,7 +35,7 @@ const Header: React.FC = () => {
         <section className={`header ${isScrolled ? 'scrolled' : ''}`}>
             <div className='container d-flex align-items-center'>
                 <div className="header__content d-flex justify-content-between align-items-center">
-                    <div className="header__logo">
+                    <div className="header__logo" onClick={() => window.scrollTo(0,0)}>
                         <Image src={logo} alt="logo" className='header__logo' />
                     </div>
                     <div className="header__menu d-none d-lg-block">
