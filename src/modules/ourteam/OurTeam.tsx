@@ -3,9 +3,9 @@ import "../../styles/ourteam.css";
 
 import Image from "next/image";
 
-import Person1 from "../../assets/images/team/foto_aul.png";
-import Person2 from "../../assets/images/team/foto_misel.png";
-import Person3 from "../../assets/images/team/foto_sofi.png";
+import Person1 from "../../assets/images/team/foto_aul.webp";
+import Person2 from "../../assets/images/team/foto_misel.webp";
+import Person3 from "../../assets/images/team/foto_sofi.webp";
 
 export const OurTeam = (): JSX.Element => {
     return (

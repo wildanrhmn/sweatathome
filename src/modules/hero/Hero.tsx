@@ -4,11 +4,8 @@ import Image from 'next/image'
 import '../../styles/hero.css'
 import { useMediaQuery } from 'react-responsive'
 
-import backgroundImg from '../../assets/images/background/hero.png'
+import backgroundImg from '../../assets/images/background/hero.webp'
 const HeroSection: React.FC = () => {
-    const isDesktop = useMediaQuery({
-        query: '(max-width: 992px)'
-    })
     return (
         <section className="hero">
             <div className="hero__text">

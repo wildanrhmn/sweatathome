@@ -6,16 +6,11 @@ import '../../styles/header.css'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import logo from '../../assets/icon/logo.png'
+import logo from '../../assets/icon/logo.webp'
 
 const Header: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
-
-    const openWhatsAppChat = () => {
-        // Replace 'your-number' with your actual WhatsApp number
-        window.open('https://wa.me/6285716770575?text=Halo%20Sweat%20at%20Home', '_blank');
-      };
-
+    
     useEffect(() => {
         const handleScroll = () => {
           const scrollTop = window.pageYOffset;
