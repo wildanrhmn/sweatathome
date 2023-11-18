@@ -4,7 +4,7 @@
 
 .hero__text{
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 5%;
 }
 
@@ -19,14 +19,13 @@
     font-weight: 700;
 }
 
-.hero__text h1::after{
-    content: '';
-    position: absolute;
-    bottom: -25px;
-    left: 0;
-    width: 15%;
-    height: 5px;
+.hero__text h1:last-child{
     background-color: var(--secondary-color);
+    width: max-content;
+    color: var(--main-color);
+    padding: 7px 20px;
+    border-radius: 38px;
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 1200px){
@@ -45,15 +44,6 @@
     .hero__text h1{
         font-size: 24px;
     }
-    .hero__text h1::after{
-        content: '';
-        position: absolute;
-        bottom: -25px;
-        left: 0;
-        width: 15%;
-        height: 3px;
-        background-color: var(--secondary-color);
-    }
 }
 
 @media screen and (max-width: 576px){
@@ -66,6 +56,15 @@
         width: 100%;
     }
 
+    .hero__text h1:last-child{
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 18px;
+    }
+
     .hero__text h3{
         font-size: 14px;
         font-weight: 500;
@@ -73,16 +72,6 @@
     
     .hero__text h1{
         font-size: 20px;
-    }
-    
-    .hero__text h1::after{
-        content: '';
-        position: absolute;
-        bottom: -25px;
-        width: 45%;
-        left: 27.5%; /* Adjust this value to center the line under the h1 */
-        height: 3px;
-        background-color: var(--secondary-color);
     }
 }
 

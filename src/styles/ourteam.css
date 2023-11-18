@@ -89,14 +89,18 @@
 
     .person__card{
         width: 350px;
-        height: 610px;
+        height: 630px;
+    }
+
+    .person__wrapper{
+        padding: 25px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .person__card{
         width: 300px;
-        height: 550px;
+        height: 580px;
     }
 
     .person__name h5{
@@ -151,11 +155,16 @@
     .our-team h1{
         font-size: 30px;
     }  
+
+    .person__card{
+        width: 300px;
+        height: 550px;
+    }
 }
 
 @media screen and (max-width: 576px) {
     .our-team h1{
-        font-size: 24px;
+        font-size: 30px;
     }  
 
     .our-team {

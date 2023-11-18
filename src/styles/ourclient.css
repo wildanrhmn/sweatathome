@@ -48,6 +48,16 @@
     height: 100%;
   }
 
+  @media screen and (max-width: 1400px){
+    .our-client {
+      padding: 65px 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+    
+  }
+
   @media screen and (max-width: 992px) {
     .our-client__slider{
       width: 800px;
@@ -62,6 +72,15 @@
       width: 180px;
       height: 75px;
     }
+
+    .our-client {
+      padding-top: 50px;
+      padding-bottom: 95px
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    
   }
 
   /* Customizing Swiper pagination */

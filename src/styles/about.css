@@ -12,8 +12,6 @@
 .about__card {
     background-color: var(--secondary-color);
     box-shadow: rgba(0, 0, 0, 0.25);
-    width: 358px;
-    height: 383px;
     border-radius: 35px;
     padding: 35px;
     line-height: 30px;
@@ -38,8 +36,12 @@
     font-size: 45px;
 }
 
+ul li {
+    margin: 5px 0;
+}
+
 ul li p {
-    font-size: 15px;
+    font-size: 17PX;
 }
 
 @media screen and (max-width: 1400px) {

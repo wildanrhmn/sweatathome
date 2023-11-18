@@ -28,6 +28,7 @@ export const OurTeam = (): JSX.Element => {
                                             <li>Bachelor of Sport Science</li>
                                             <li>Ex Sprinter Athlete</li>
                                             <li>Ex Running Target Shooting Athlete</li>
+                                            <li>Shotgun Athlete</li>
                                             <li>APKI Certified Trainer</li>
                                             <li>Pre & Post Natal Certified Coach</li>
                                             <li>First Aid Certified</li>
