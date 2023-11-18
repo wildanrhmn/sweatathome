@@ -30,6 +30,7 @@ body {
   color: var(--main-color);
   line-height: 1.5;
   font-size: 14px;
+  overflow-x: hidden !important;
 }
 
 p {

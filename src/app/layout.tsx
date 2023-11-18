@@ -3,6 +3,7 @@ import '../styles/global.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Header from '@/modules/header/Header'
+import Footer from '@/modules/footer/Footer';
 
 export const metadata: Metadata = {
   title: 'Sweat At Home | Pilihan Personal Trainer Terpercaya #1',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
