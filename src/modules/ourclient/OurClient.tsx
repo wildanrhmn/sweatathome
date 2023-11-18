@@ -18,12 +18,6 @@ import image2 from '../../assets/images/client/2.webp';
 import image3 from '../../assets/images/client/3.webp';
 import image4 from '../../assets/images/client/4.webp';
 import image5 from '../../assets/images/client/5.webp';
-import image6 from '../../assets/images/client/6.webp';
-import image7 from '../../assets/images/client/7.webp';
-import image8 from '../../assets/images/client/8.webp';
-import image9 from '../../assets/images/client/9.webp';
-import image10 from '../../assets/images/client/10.webp';
-import image11 from '../../assets/images/client/11.webp';
 
 const OurClientSection: React.FC = () => {
     return (
@@ -44,9 +38,12 @@ const OurClientSection: React.FC = () => {
                             depth: 100, // Adjust depth
                             modifier: 1, // Modifier of the depth effect, better to keep it close to 1
                         }}
-                        pagination={true}
+                        pagination={{
+                            el: '.my-custom-pagination-div',
+                          }}
                         modules={[EffectCoverflow, Pagination]}
                         className="mySwiper"
+                        
                     >
                         <SwiperSlide>
                             <Image src={image1} alt="client" className='our-client__slider' />
@@ -63,25 +60,8 @@ const OurClientSection: React.FC = () => {
                         <SwiperSlide>
                             <Image src={image5} alt="client" className='our-client__slider' />
                         </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image6} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image7} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image8} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image9} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image10} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <Image src={image11} alt="client" className='our-client__slider' />
-                        </SwiperSlide>
                     </Swiper>
+                    <div className="my-custom-pagination-div" />
                 </div>
             </div>
         </section>

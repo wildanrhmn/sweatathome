@@ -3,15 +3,10 @@
 import "../../styles/about.css";
 
 import CheckIcon from "@mui/icons-material/Check";
+import Image from "next/image";
+import qr from '../../assets/images/qrcode/qr.webp';
 
 const AboutPage: React.FC = () => {
-  const openWhatsAppChat = () => {
-    // Replace 'your-number' with your actual WhatsApp number
-    window.open(
-      "https://wa.me/6285716770575?text=Halo%20Sweat%20at%20Home",
-      "_blank"
-    );
-  };
 
   return (
     <section className="about">
@@ -100,10 +95,11 @@ const AboutPage: React.FC = () => {
               <p style={{ fontWeight: "700" }}>
                 Dirumah aja, yuk!
               </p>
-              <div className="d-flex justify-content-center flex-column">
-                <button onClick={openWhatsAppChat} className="button__about">
+              <div className="d-flex justify-content-center flex-column align-items-center pt-3">
+                <Image src={qr} alt="qr" width={256} height={256} />
+                <span className="button__about">
                   Chat Sekarang!
-                </button>
+                </span>
               </div>
             </div>
           </div>

@@ -30,14 +30,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-  }
-  
+
   .swiper-slide img {
     display: block;
     width: 100%;
@@ -48,14 +41,11 @@
     height: 100%;
   }
 
+
   @media screen and (max-width: 1400px){
     .our-client {
       padding: 65px 0;
     }
-  }
-
-  @media screen and (max-width: 1200px){
-    
   }
 
   @media screen and (max-width: 992px) {
@@ -75,29 +65,26 @@
 
     .our-client {
       padding-top: 50px;
-      padding-bottom: 95px
+      padding-bottom: 130px
     }
   }
 
-  @media screen and (max-width: 768px){
-    
-  }
-
-  /* Customizing Swiper pagination */
-.swiper-pagination {
-  /* Set your desired margin */
-  bottom: -55px !important
+.my-custom-pagination-div{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Change the color of inactive bullets */
-.swiper-pagination .swiper-pagination-bullet {
-  background: #C3C3C3; /* Change the color to your preferred color */
-  width: 10px;
-  height: 10px;
+.swiper-pagination-bullet {
+  background: #444444; /* Change the color to your preferred color */
+  width: 10px !important;
+  height: 10px !important;
 }
 
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: #eae839; /* Change the color to your preferred color */
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #eae839 !important;   /* Change the color to your preferred color */
   /* You can also add other styles like border-radius, margin, etc. */
 }
 
