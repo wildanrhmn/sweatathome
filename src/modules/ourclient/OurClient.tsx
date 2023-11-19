@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { useMediaQuery } from 'react-responsive';
 
 import image1 from '../../assets/images/client/1.webp';
 import image2 from '../../assets/images/client/2.webp';
@@ -20,6 +21,7 @@ import image4 from '../../assets/images/client/4.webp';
 import image5 from '../../assets/images/client/5.webp';
 
 const OurClientSection: React.FC = () => {
+    const isMobile = useMediaQuery({ query: '(max-width: 576px)' });
     return (
         <section className="our-client">
             <div className="container d-flex justify-content-center align-items-center flex-column">
@@ -31,7 +33,8 @@ const OurClientSection: React.FC = () => {
                         effect={'coverflow'}
                         grabCursor={true}
                         centeredSlides={true}
-                        slidesPerView={3}
+                        slidesPerView={isMobile ? 1 : 3}
+                        autoplay
                         coverflowEffect={{
                             rotate: 50, // Adjust rotation angle
                             stretch: 0, // Set to 0 to prevent stretching
