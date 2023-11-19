@@ -32,8 +32,8 @@
   }
 
   .swiper-slide img {
-    display: block;
-    width: 100%;
+    max-width: 100%; /* Ensure images don't exceed container */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .our-client__slider{
@@ -47,6 +47,14 @@
       padding: 65px 0;
     }
   }
+
+  @media screen and (max-width: 576px){
+    .swiper-slide {
+      max-width: 300px; /* Adjust the value as needed */
+      overflow-x: hidden !important;
+  }
+  }
+  
 
   @media screen and (max-width: 992px) {
     .our-client__slider{
