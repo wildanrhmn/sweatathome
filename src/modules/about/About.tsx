@@ -100,7 +100,7 @@ const AboutPage: React.FC = () => {
               <p style={{ fontWeight: "700" }}>
                 Dirumah aja, yuk!
               </p>
-              <div className="d-flex justify-content-center flex-column align-items-center pt-3">
+              <div className="d-flex justify-content-center flex-column align-items-center pt-3 cta">
                 <Image src={qr} alt="qr" width={256} height={256} />
                 <span className="button__about" style={{textDecoration: "underline", cursor: "pointer"}} onClick={openWhatsAppChat}>
                   Chat Sekarang!
