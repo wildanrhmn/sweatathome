@@ -9,7 +9,7 @@ import Person3 from "../../assets/images/team/foto_sofi.webp";
 
 export const OurTeam = (): JSX.Element => {
     return (
-        <section className="our-team">
+        <section className="our-team" id="our_team">
             <div className="container">
                 <h1>Tim <span style={{color: "#eae839"}}>Manajemen</span> Kami</h1>
                     <div className="row d-flex align-items-center justify-content-center gap-3 gap-md-0">

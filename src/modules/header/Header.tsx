@@ -10,7 +10,19 @@ import logo from '../../assets/icon/logo.webp'
 
 const Header: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState<boolean>(false);
-    
+    const handleScrolltoTeam = () => {
+        const teamSection = document.getElementById('our_team');
+        if (teamSection) {
+          teamSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    const handleScrolltoContact = () => {
+        const teamSection = document.getElementById('about');
+        if (teamSection) {
+          teamSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     useEffect(() => {
         const handleScroll = () => {
           const scrollTop = window.pageYOffset;
@@ -34,8 +46,8 @@ const Header: React.FC = () => {
                         <Image src={logo} alt="logo" className='header__logo' />
                     </div>
                     <div className="header__menu d-none d-lg-block">
-                        <Link href={'#our-team'}>Tim Kami</Link>
-                        <Link href={'#consultation'} >Konsultasi</Link>
+                        <Link href={'#'} onClick={handleScrolltoTeam}>Tim Kami</Link>
+                        <Link href={'#'} onClick={handleScrolltoContact} >Konsultasi</Link>
                     </div>
                 </div>
             </div>

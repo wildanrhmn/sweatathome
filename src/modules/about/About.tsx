@@ -8,8 +8,13 @@ import qr from '../../assets/images/qrcode/qr.webp';
 
 const AboutPage: React.FC = () => {
 
+  const openWhatsAppChat = () => {
+    // Replace 'your-number' with your actual WhatsApp number
+    window.open('https://wa.me/6285716770575?text=Halo%20Sweat%20at%20Home', '_blank');
+  };
+
   return (
-    <section className="about">
+    <section className="about" id="about">
       <div className="container">
         <div className="row about__content d-flex align-items-center">
           <div className="col-lg-8">
@@ -97,7 +102,7 @@ const AboutPage: React.FC = () => {
               </p>
               <div className="d-flex justify-content-center flex-column align-items-center pt-3">
                 <Image src={qr} alt="qr" width={256} height={256} />
-                <span className="button__about">
+                <span className="button__about" style={{textDecoration: "underline", cursor: "pointer"}} onClick={openWhatsAppChat}>
                   Chat Sekarang!
                 </span>
               </div>
