@@ -50,8 +50,9 @@ export const OurTeam = (): JSX.Element => {
                                     <div className="person__position">
                                         <ul>
                                             <li>Bachelor of Arts in Communications</li>
-                                            <li>Master of Communications Certified</li>
-                                            <li>Sports Nutrition Coach Content Briefer</li>
+                                            <li>Master of Communication</li>
+                                            <li>Certified Sports Nutrition Coach</li>
+                                            <li>Content Briefer</li>
                                             <li>Business Development</li>
                                         </ul>
                                     </div>
